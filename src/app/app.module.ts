@@ -8,11 +8,13 @@ import { environment } from '../environments/environment';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderCardComponent } from './components/header-card/header-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    HeaderCardComponent
   ],
   imports: [
     BrowserModule,
