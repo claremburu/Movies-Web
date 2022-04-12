@@ -9,12 +9,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderCardComponent } from './components/header-card/header-card.component';
+import { MoviesCardComponent } from './components/movies-card/movies-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HeaderCardComponent
+    HeaderCardComponent,
+    MoviesCardComponent
   ],
   imports: [
     BrowserModule,

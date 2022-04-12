@@ -1,0 +1,10 @@
+.movies-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 210px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
