@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,13 +11,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderCardComponent } from './components/header-card/header-card.component';
 import { MoviesCardComponent } from './components/movies-card/movies-card.component';
+import { MoviesItemComponent } from './components/movies-item/movies-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HeaderCardComponent,
-    MoviesCardComponent
+    MoviesCardComponent,
+    MoviesItemComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { MoviesCardComponent } from './components/movies-card/movies-card.compon
       registrationStrategy: 'registerWhenStable:30000'
     }),
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

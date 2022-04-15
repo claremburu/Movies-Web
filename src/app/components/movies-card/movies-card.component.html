@@ -1,13 +1,30 @@
 <p>In Theatres</p>
-<div class="movies-card">
 
-</div>
-<p>
-   Movie-title
-</p>
+<!-- <div class="movies-card"> -->
+<!-- <img
+[src]='movies?.image'
+[style.width.px]='50'
+[style.margin.px]='2'>
+</div> -->
+
+<!-- <h3 [title]='movies?.title'></h3> -->
+
+<app-movies-item *ngFor="let movie of movies" [movie]="movie">
+
+<!-- </app-movies-item> -->
+<!-- <div class="movies-card">
+   <img [src]="movies?.image">
+</div> -->
 <p>
    Popular
 </p>
-<div class="movies-card">
+<!-- <p>
+   Popular
+</p>
+<div class="movies-card"> -->
 
-</div>
+<!-- </div> -->
+
+<!-- <p>
+    Movie-title
+ </p> -->
